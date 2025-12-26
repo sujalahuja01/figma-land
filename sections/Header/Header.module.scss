@@ -1,0 +1,35 @@
+.header {
+  margin: 2.5rem auto;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.list {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.navList {
+  display: flex;
+  gap: 2.5rem;
+  list-style: none;
+}
+
+.navLink {
+  text-decoration: none;
+  color: var(--primary-white);
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.75rem;
+  letter-spacing: 0.2px;
+}
+
+.socials {
+  display: flex;
+  gap: 1.5rem;
+}
