@@ -4,6 +4,7 @@ import Features from "@/sections/features";
 import Organise from "@/sections/organise";
 import Light from "@/sections/light";
 import Partners from "@/sections/partners";
+import Testimonials from "@/sections/testimonials";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <Organise />
       <Light />
       <Partners />
+      <Testimonials />
     </main>
   );
 }

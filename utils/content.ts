@@ -78,7 +78,7 @@ export const ORGANISE_CONTENT = {
     "Most calendars are designed for teams. Slate is designed for freelancers",
   image: {
     src: "/macbook.svg",
-    alt: "macbook-img",
+    alt: "macbook image",
   },
   btn_text: "Try For Free",
 };
@@ -90,7 +90,7 @@ export const LIGHT_CONTENT = {
   desc_3: "Available exclusivery on Figmaland",
   image: {
     src: "/light-img.svg",
-    alt: "",
+    alt: "background",
   },
   btn_text: "Subscribe",
   input_text: "Your Email",
@@ -149,6 +149,53 @@ export const PARTNERS_CONTENT = {
       src: "/partners/amazon.svg",
       alt: "amazon",
       clinet: "client name",
+    },
+  ],
+};
+
+export const TESTIMONIALS_CONTENT = {
+  heading: "Testimonials",
+  left_arrow: {
+    src: "/left.svg",
+    alt: "left arrow",
+  },
+  right_arrow: {
+    src: "/right.svg",
+    alt: "right arrow",
+  },
+  testimonials: [
+    {
+      id: 1,
+      logo: {
+        src: "/ibm.svg",
+        alt: "ibm logo",
+      },
+      desc: "Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.",
+      profile: "/profile.svg",
+      role: "Manager",
+      title: "Organize across",
+    },
+    {
+      id: 2,
+      logo: {
+        src: "/partners/amazon.svg",
+        alt: "amazon logo",
+      },
+      desc: "Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.",
+      profile: "/profile.svg",
+      role: "UX Designer",
+      title: "Organize across",
+    },
+    {
+      id: 3,
+      logo: {
+        src: "/partners/google.svg",
+        alt: "google logo",
+      },
+      desc: "Most calendars are designed for teams. Slate is designed for freelancers who want a simple way to plan their schedule.",
+      profile: "/profile.svg",
+      role: "Developer",
+      title: "Organize across",
     },
   ],
 };

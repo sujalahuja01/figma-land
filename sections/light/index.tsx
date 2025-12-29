@@ -30,7 +30,7 @@ const index = () => {
               placeholder={input_text}
               className={styles.light__input}
             />
-            <Button text={btn_text} />
+            <Button style="" text={btn_text} />
           </div>
         </div>
       </div>
