@@ -6,13 +6,13 @@ import Image from "next/image";
 import { HERO_CONTENT } from "@/utils/content";
 
 const hero = () => {
-  const { heading, description, text } = HERO_CONTENT;
+  const { heading, description, btn_text, image } = HERO_CONTENT;
   return (
     <section className={`${styles.hero} ${styles.hero__sec}`}>
       <Image
         className={styles.bg__image}
-        src="/hero-bg.jpg"
-        alt="back"
+        src={image.src}
+        alt={image.alt}
         fill
         priority
       />
@@ -21,7 +21,7 @@ const hero = () => {
           <h1 className={styles.hero__heading}>{heading}</h1>
           <p className={styles.hero__para}>{description}</p>
           <div className={styles.hero__btn}>
-            <Button text={text} />
+            <Button text={btn_text} />
           </div>
         </div>
       </div>

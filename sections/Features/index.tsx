@@ -4,8 +4,8 @@ import Image from "next/image";
 const features = () => {
   const { heading, description, image, features } = FEATURES_CONTENT;
   return (
-    <section className="container">
-      <div className={styles.section_container}>
+    <section className={`container ${styles.features__container}`}>
+      <div className={styles.features}>
         <div className={styles.features__heading}>
           <h2 className={styles.features__title}>{heading}</h2>
           <p className={styles.features__desc}>{description}</p>
@@ -13,7 +13,7 @@ const features = () => {
         <div className={styles.features__cards}>
           {features.map((feature) => (
             <div className={styles.features__card} key={feature.id}>
-              <img src={feature.logo} alt="" />
+              <img src={feature.logo} alt={feature.alt} />
               <h3 className={styles.features__cardHead}>{feature.title}</h3>
               <p className={styles.features__cardDesc}>{feature.description}</p>
             </div>

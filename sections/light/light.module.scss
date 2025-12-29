@@ -1,0 +1,62 @@
+.light__container {
+  margin-top: 16.8rem;
+}
+
+.light {
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+  align-items: center;
+}
+
+.light__title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 55px;
+  letter-spacing: 0.2px;
+  margin: 17px 0 35px 0;
+  max-width: 25rem;
+  color: var(--primary-blue);
+}
+
+.light__desc1 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+  color: var(--primary-blue);
+}
+
+.light__desc2 {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+}
+
+.light__desc3 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  letter-spacing: 0.2px;
+  margin-bottom: 36px;
+  color: var(--primary-gray);
+}
+
+.light__sub {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.light__input {
+  border: none;
+  background-color: #f4f4f4;
+  padding: 19px 0 19px 39px;
+  max-width: 17rem;
+  width: 100%;
+  border-radius: 39px;
+}
+
+.light__image {
+  width: 100%;
+}

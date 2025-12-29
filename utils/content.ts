@@ -29,8 +29,13 @@ export const HERO_CONTENT = {
   heading: " The best products start with Figma",
   description:
     "Most calendars are designed for teams. Slate is designed for freelancers",
-  text: "Try For Free",
+  btn_text: "Try For Free",
+  image: {
+    src: "/hero-bg.jpg",
+    alt: "background",
+  },
 };
+
 export const FEATURES_CONTENT = {
   heading: "Features",
   description:
@@ -43,6 +48,7 @@ export const FEATURES_CONTENT = {
     {
       id: 1,
       logo: "/icons/shape.svg",
+      alt: "icon",
       title: "OpenType features Variable fonts",
       description:
         "Slate helps you see how many more days you need to work to reach your financial goal.",
@@ -50,6 +56,7 @@ export const FEATURES_CONTENT = {
     {
       id: 2,
       logo: "/icons/draw.svg",
+      alt: "icon",
       title: "Design with real data",
       description:
         "Slate helps you see how many more days you need to work to reach your financial goal.",
@@ -57,9 +64,34 @@ export const FEATURES_CONTENT = {
     {
       id: 3,
       logo: "/icons/brush.svg",
+      alt: "icon",
       title: "Fastest way to take action",
       description:
         "Slate helps you see how many more days you need to work to reach your financial goal.",
     },
   ],
+};
+
+export const ORGANISE_CONTENT = {
+  heading: "Fastest way to organize",
+  description:
+    "Most calendars are designed for teams. Slate is designed for freelancers",
+  image: {
+    src: "/macbook.svg",
+    alt: "macbook-img",
+  },
+  btn_text: "Try For Free",
+};
+
+export const LIGHT_CONTENT = {
+  heading: "Lightning fast prototyping ",
+  desc_1: "At your fingertips",
+  desc_2: "Subscribe to our Newsletter",
+  desc_3: "Available exclusivery on Figmaland",
+  image: {
+    src: "/light-img.svg",
+    alt: "section-img",
+  },
+  btn_text: "Subscribe",
+  input_text: "Your Email",
 };
