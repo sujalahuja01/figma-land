@@ -90,8 +90,65 @@ export const LIGHT_CONTENT = {
   desc_3: "Available exclusivery on Figmaland",
   image: {
     src: "/light-img.svg",
-    alt: "section-img",
+    alt: "",
   },
   btn_text: "Subscribe",
   input_text: "Your Email",
+};
+
+export const PARTNERS_CONTENT = {
+  heading: "Partners",
+  btn_text: "Try For Free",
+  description:
+    "Most calendars are designed for teams. Slate is designed for freelancers",
+  images: [
+    {
+      id: 1,
+      src: "/partners/google.svg",
+      alt: "google",
+      clinet: "client name",
+    },
+    {
+      id: 2,
+      src: "/partners/amazon.svg",
+      alt: "amazon",
+      clinet: "client name",
+    },
+    {
+      id: 3,
+      src: "/partners/microsoft.svg",
+      alt: "microsoft",
+      clinet: "client name",
+    },
+    {
+      id: 4,
+      src: "/partners/uber.svg",
+      alt: "uber",
+      clinet: "client name",
+    },
+    {
+      id: 5,
+      src: "/partners/dropbox.svg",
+      alt: "dropbox",
+      clinet: "client name",
+    },
+    {
+      id: 6,
+      src: "/partners/google.svg",
+      alt: "google",
+      clinet: "client name",
+    },
+    {
+      id: 7,
+      src: "/partners/uber.svg",
+      alt: "uber",
+      clinet: "client name",
+    },
+    {
+      id: 8,
+      src: "/partners/amazon.svg",
+      alt: "amazon",
+      clinet: "client name",
+    },
+  ],
 };

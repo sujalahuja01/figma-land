@@ -3,6 +3,7 @@ import Hero from "@/sections/hero";
 import Features from "@/sections/features";
 import Organise from "@/sections/organise";
 import Light from "@/sections/light";
+import Partners from "@/sections/partners";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Features />
       <Organise />
       <Light />
+      <Partners />
     </main>
   );
 }

@@ -25,6 +25,7 @@ const features = () => {
           alt={image.alt}
           height={660}
           width={1177}
+          priority
         />
       </div>
     </section>
