@@ -199,3 +199,59 @@ export const TESTIMONIALS_CONTENT = {
     },
   ],
 };
+
+export const PRICING_CONTENT = {
+  heading: "Pricing",
+  description:
+    "Most calendars are designed for teams. Slate is designed for freelancers",
+  cards: [
+    {
+      id: 1,
+      pack: "FREE",
+      description: "Organize across all apps by hand",
+      price: "0",
+      currency: "$",
+      tenure: "Per Month",
+      btn_text: "Order Now",
+      benefits: [
+        "Pricing Feature",
+        "Pricing Feature",
+        "Pricing Feature",
+        "Pricing Feature",
+        "Pricing Feature",
+      ],
+    },
+    {
+      id: 2,
+      pack: "STANDARD",
+      description: "Organize across all apps by hand",
+      price: "10",
+      currency: "$",
+      tenure: "Per Month",
+      btn_text: "Order Now",
+      benefits: [
+        "Pricing Feature",
+        "Pricing Feature",
+        "Pricing Feature",
+        "Pricing Feature",
+        "Pricing Feature",
+      ],
+    },
+    {
+      id: 3,
+      pack: "BUSINESS",
+      description: "Organize across all apps by hand",
+      price: "99",
+      currency: "$",
+      tenure: "Per Month",
+      btn_text: "Order Now",
+      benefits: [
+        "Pricing Feature",
+        "Pricing Feature",
+        "Pricing Feature",
+        "Pricing Feature",
+        "Pricing Feature",
+      ],
+    },
+  ],
+};

@@ -1,0 +1,79 @@
+.pricing__card {
+  padding: 2.5rem 2.5rem;
+  border: 1px solid #dedede;
+  width: fit-content;
+  border-radius: 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.pricing__pack {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+}
+
+.pricing__desc {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.1px;
+  text-align: center;
+}
+
+.pricing__cardPricing {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 1.8rem 0;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 74px;
+  line-height: 84px;
+  letter-spacing: 0.2px;
+}
+
+.price__text {
+  text-align: start;
+}
+
+.price__currency {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+}
+
+.price__tenure {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  letter-spacing: 0.1px;
+}
+
+.pricing__cardList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.list__item {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  letter-spacing: 0.2px;
+}
+
+.active {
+  padding: 5rem 2.5rem;
+  background-color: #2091f9;
+}
+
+.pricing__btn {
+  background-color: #ffffff;
+}

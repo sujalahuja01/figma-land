@@ -5,6 +5,7 @@ import Organise from "@/sections/organise";
 import Light from "@/sections/light";
 import Partners from "@/sections/partners";
 import Testimonials from "@/sections/testimonials";
+import Pricing from "@/sections/pricing";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Light />
       <Partners />
       <Testimonials />
+      <Pricing />
     </main>
   );
 }
