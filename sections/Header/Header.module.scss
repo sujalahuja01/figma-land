@@ -1,5 +1,11 @@
+.h {
+  position: absolute;
+}
 .header {
   margin: 2.5rem auto;
+  position: relative;
+  z-index: 1;
+  overflow-x: hidden;
 }
 
 .navbar {
@@ -32,4 +38,8 @@
 .socials {
   display: flex;
   gap: 1.5rem;
+}
+
+.bg__image {
+  object-fit: cover;
 }

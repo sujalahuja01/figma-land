@@ -2,11 +2,11 @@ import { HEADER_CONTENT } from "@/utils/content";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import styles from "./Header.module.scss";
+import styles from "./header.module.scss";
 const Header = () => {
   const { logo, links, socials } = HEADER_CONTENT;
   return (
-    <header className="container">
+    <header className={`container ${styles.h}`}>
       <div className={styles.header}>
         <nav className={styles.navbar}>
           <div className={styles.list}>
@@ -22,9 +22,7 @@ const Header = () => {
                 </li>
               ))}
             </ul>
-            <div className={styles.logo}>
-              <Image src={logo.src} alt={logo.alt} height={78} width={246} />
-            </div>
+            <Image src={logo.src} alt={logo.alt} height={78} width={246} />
           </div>
           <div className={styles.socials}>
             {socials.map((social) => (

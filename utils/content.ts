@@ -35,6 +35,10 @@ export const FEATURES_CONTENT = {
   heading: "Features",
   description:
     "Most calendars are designed for teams.Slate is designed for freelancers",
+  image: {
+    src: "/video.png",
+    alt: "video-img",
+  },
   features: [
     {
       id: 1,
