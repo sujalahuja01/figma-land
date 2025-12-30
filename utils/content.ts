@@ -255,3 +255,150 @@ export const PRICING_CONTENT = {
     },
   ],
 };
+
+export const CONTACT_CONTENT = {
+  heading: "Contact",
+  description:
+    "Most calendars are designed for teams. Slate is designed for freelancers",
+  placeholder: {
+    head: "Contact Us",
+    name: "Your Name",
+    email: "Your Email",
+    message: "Your Message",
+  },
+  btn_text: "Send",
+  map: {
+    src: "/map.svg",
+    alt: "map",
+  },
+  socials: [
+    {
+      platform: "twitter",
+      link: "#",
+      src: "/icons/tweet-blue.svg",
+      alt: "twitter logo",
+    },
+    {
+      platform: "facebook",
+      link: "#",
+      src: "/icons/facebook-blue.svg",
+      alt: "facebook logo",
+    },
+    {
+      platform: "linkedin",
+      link: "#",
+      src: "/icons/linkedin-blue.svg",
+      alt: "linkedin logo",
+    },
+  ],
+  information: [
+    {
+      text: "6386 Spring St undefined Anchorage, Georgia 12473 United States",
+      src: "/icons/location.svg",
+      alt: "icon",
+    },
+    {
+      text: "(843) 555-0130",
+      src: "/icons/phone.svg",
+      alt: "icon",
+    },
+    {
+      text: "willie.jennings@example.com",
+      src: "/icons/mail.svg",
+      alt: "icon",
+    },
+  ],
+};
+
+export const FOOTER_CONTENT = {
+  links: [
+    {
+      heading: "Pages",
+      links: [
+        {
+          name: "Home",
+          href: "#home",
+        },
+        {
+          name: "Product",
+          href: "#product",
+        },
+        {
+          name: "Pricing",
+          href: "#pricing",
+        },
+        {
+          name: "About",
+          href: "#about",
+        },
+        {
+          name: "Contact",
+          href: "#contact",
+        },
+      ],
+    },
+    {
+      heading: "Tomothy",
+      links: [
+        {
+          name: "Eleanor Edwards",
+          href: "#",
+        },
+        {
+          name: "Ted Robertson",
+          href: "#",
+        },
+        {
+          name: "Annette Russell",
+          href: "#",
+        },
+        {
+          name: "Jennie Mckinney",
+          href: "#",
+        },
+        {
+          name: "Gloria Richards",
+          href: "#",
+        },
+      ],
+    },
+    {
+      heading: "Jane Black",
+      links: [
+        {
+          name: "Philip Jones",
+          href: "#",
+        },
+        {
+          name: "Product",
+          href: "#",
+        },
+        {
+          name: "Colleen Russell",
+          href: "#",
+        },
+        {
+          name: "Marvin Hawkins",
+          href: "#",
+        },
+        {
+          name: "Bruce Simmmons",
+          href: "#",
+        },
+      ],
+    },
+  ],
+  location: [
+    {
+      text: "7480 Mockingbird Hill undefined ",
+      src: "/icons/map-white.svg",
+      alt: "icon",
+    },
+    {
+      text: "(239) 555-0108",
+      src: "/icons/phone-white.svg",
+      alt: "icon",
+    },
+  ],
+  socials: HEADER_CONTENT.socials,
+};

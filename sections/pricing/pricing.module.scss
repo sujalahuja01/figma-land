@@ -5,15 +5,22 @@
   text-align: center;
 }
 
+.pricing__container {
+  background-color: var(--primary-blue);
+  padding: 100px 0;
+}
+
 .pricing__card {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   width: 100%;
+  gap: 20px;
 }
 
 .heading {
   max-width: 33rem;
+  color: var(--primary-white);
 }
 
 .title {

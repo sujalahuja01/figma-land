@@ -1,0 +1,26 @@
+.footer__about {
+  color: var(--primary-white);
+}
+
+.footer__item {
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: var(--primary-white);
+  letter-spacing: 0.2px;
+}
+.footer__head {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.1px;
+  margin-bottom: 25px;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  list-style: none;
+  word-break: break-all;
+}

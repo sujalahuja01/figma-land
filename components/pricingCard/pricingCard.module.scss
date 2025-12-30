@@ -5,6 +5,7 @@
   border-radius: 10px;
   text-align: center;
   transition: all 0.3s ease;
+  background-color: var(--primary-white);
 }
 .pricing__pack {
   font-weight: 700;
@@ -70,10 +71,13 @@
 }
 
 .active {
-  padding: 5rem 2.5rem;
-  background-color: #2091f9;
+  // padding: 5rem 2.5rem;
+  transform: scale(1.06);
+  background-color: var(--button-blue);
+  color: var(--primary-white);
 }
 
 .pricing__btn {
-  background-color: #ffffff;
+  background-color: var(--primary-white);
+  color: var(--button-blue);
 }

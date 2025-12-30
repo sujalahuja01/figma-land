@@ -1,0 +1,46 @@
+.footer__container {
+  background-color: var(--primary-blue);
+}
+
+.footer {
+  display: grid;
+  grid-template-columns: 1.5fr 0.5fr;
+  padding: 150px 0;
+}
+
+.footer__links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.locationInfo {
+  display: flex;
+  color: var(--primary-white);
+  align-items: center;
+  gap: 10px;
+}
+
+.footer__location {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.locationImage {
+  width: 46px;
+  height: 46px;
+}
+
+.locationText {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 27px;
+  letter-spacing: 0.2px;
+}
+
+.footer__socials {
+  display: flex;
+  gap: 1.5rem;
+}

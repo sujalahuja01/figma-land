@@ -4,7 +4,10 @@ import Button from "../Button/Button";
 
 const index = ({ card, isActive, onClick }) => {
   return (
-    <div className={`${styles.pricing__card} ${isActive ? styles.active : ""}`}>
+    <div
+      className={`${styles.pricing__card} ${isActive ? styles.active : ""}`}
+      onClick={onClick}
+    >
       <h3 className={styles.pricing__pack}>{card.pack}</h3>
       <h5 className={styles.pricing__desc}>{card.description}</h5>
       <div className={styles.pricing__cardPricing}>
@@ -22,11 +25,9 @@ const index = ({ card, isActive, onClick }) => {
         ))}
       </ul>
       <Button
-        style=""
+        style={isActive ? styles.pricing__btn : ""}
         text={card.btn_text}
-        onClick={(e) => {
-          e.stopPropagation();
-        }}
+        onClick={onClick}
       />
     </div>
   );
