@@ -1,62 +1,65 @@
 .features {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
-.features__heading {
-  max-width: 34.5rem;
-}
+  &__content {
+    max-width: 34.5rem;
+  }
 
-.features__title {
-  font-weight: 400;
-  font-size: 48px;
-  line-height: 55px;
-  letter-spacing: var(--font-line);
-  margin-bottom: 1.7rem;
-  color: var(--primary-blue);
-}
+  &__title {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 55px;
+    letter-spacing: var(--font-line);
+    margin-bottom: 1.7rem;
+    color: var(--primary-blue);
+  }
 
-.features__desc {
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 40px;
-  letter-spacing: var(--font-line);
-  margin-bottom: 5.5rem;
-  color: var(--primary-gray);
-}
+  &__desc {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: var(--font-line);
+    margin-bottom: 5.5rem;
+    color: var(--primary-gray);
+  }
 
-.features__cards {
-  display: flex;
-  width: 100%;
-  max-width: 54.5rem;
-  justify-content: space-between;
-  margin-bottom: 5rem;
-}
-.features__card {
-  max-width: 16rem;
-}
+  &__cards__container {
+    display: flex;
+    width: 100%;
+    max-width: 54.5rem;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+  }
 
-.features__cardHead {
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 28px;
-  letter-spacing: 0.1px;
-  margin: 1.25rem 0;
-  color: var(--primary-blue);
-}
+  &__card {
+    max-width: 16rem;
+  }
 
-.features__cardDesc {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-  letter-spacing: var(--font-line);
-  color: var(--primary-gray);
-}
+  &__card__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: 0.1px;
+    margin: 1.25rem 0;
+    color: var(--primary-blue);
+  }
 
-.features__image {
-  width: 100%;
-  height: 100%;
+  &__card__desc {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: var(--font-line);
+    color: var(--primary-gray);
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
 }

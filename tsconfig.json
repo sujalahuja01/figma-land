@@ -31,7 +31,12 @@
     "**/*.mts",
     "components/testimonialscard/index.jsx",
     "components/Button/Button.jsx",
-    "sections/contact/index.jsx"
+    "sections/contact/index.jsx",
+    "sections/hero/index.jsx",
+    "sections/organise/index.jsx",
+    "sections/newsletter/index.jsx",
+    "sections/partners/index.jsx",
+    "sections/pricing/index.jsx"
   ],
   "exclude": ["node_modules"]
 }

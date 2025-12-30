@@ -1,3 +1,4 @@
+"use client";
 import { HEADER_CONTENT } from "@/utils/content";
 import Image from "next/image";
 import Link from "next/link";
@@ -6,7 +7,7 @@ import styles from "./header.module.scss";
 const Header = () => {
   const { logo, links, socials } = HEADER_CONTENT;
   return (
-    <header className={`container ${styles.h}`}>
+    <header className={` ${styles.header__container}`}>
       <div className={styles.header}>
         <nav className={styles.navbar}>
           <div className={styles.list}>

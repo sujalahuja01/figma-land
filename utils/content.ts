@@ -207,6 +207,7 @@ export const PRICING_CONTENT = {
   cards: [
     {
       id: 1,
+      featured: false,
       pack: "FREE",
       description: "Organize across all apps by hand",
       price: "0",
@@ -223,6 +224,7 @@ export const PRICING_CONTENT = {
     },
     {
       id: 2,
+      featured: true,
       pack: "STANDARD",
       description: "Organize across all apps by hand",
       price: "10",
@@ -239,6 +241,7 @@ export const PRICING_CONTENT = {
     },
     {
       id: 3,
+      featured: false,
       pack: "BUSINESS",
       description: "Organize across all apps by hand",
       price: "99",
@@ -317,7 +320,7 @@ export const FOOTER_CONTENT = {
       links: [
         {
           name: "Home",
-          href: "#home",
+          href: "#hero",
         },
         {
           name: "Product",

@@ -5,24 +5,30 @@ import Button from "@/components/Button/Button";
 const index = () => {
   const { heading, description, images, btn_text } = PARTNERS_CONTENT;
   return (
-    <section className={`container ${styles.partners__contianer}`}>
-      <div className={styles.partners}>
-        <div className={styles.partners__heading}>
+    <section className={styles.partners}>
+      <div className={`container ${styles.partners__contianer}`}>
+        <div className={styles.partners__content}>
           <h2 className={styles.partners__title}>{heading}</h2>
           <p className={styles.partners__desc}>{description}</p>
-          <div className={styles.partners__logos}>
+          <div className={styles.partners__logosDiv}>
             {images.map((image) => (
-              <div key={image.id} className={styles.partners__logo}>
-                <p className={styles.logo__client}>{image.clinet}</p>
+              <div
+                key={image.id}
+                className={styles.partners__logosDiv__logo}
+              >
+                <p className={styles.partners__logo__client}>{image.clinet}</p>
                 <img
-                  className={styles.partner_img}
+                  className={styles.partner__logo}
                   src={image.src}
                   alt={image.alt}
                 />
               </div>
             ))}
           </div>
-          <Button style={styles.partners__btn} text={btn_text} />
+          <Button
+            style={styles.partners__btn}
+            text={btn_text}
+          />
         </div>
       </div>
     </section>

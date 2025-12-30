@@ -1,0 +1,81 @@
+@use "@/styles/mixins" as *;
+
+.newsletter {
+  margin-top: 16.8rem;
+
+  &__btn {
+    border: none;
+    background-color: var(--button-blue);
+    padding: 1rem 2rem;
+    border-radius: 35px;
+    color: var(--primary-white);
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: var(--font-line);
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    align-items: center;
+  }
+
+  &__title {
+    @include text-style(400, 48px, 55px, 0.2px, var(--primary-blue), 35px);
+    max-width: 25rem;
+  }
+
+  &__subTitle {
+    @include text-style(700, 20px, 28px, 0.1px, var(--primary-blue), 17px);
+  }
+
+  &__subscribe {
+    @include text-style(700, 20px, 28px, 0.1px);
+  }
+
+  &__availability {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+    margin-bottom: 36px;
+    color: var(--primary-gray);
+  }
+
+  &__sub {
+    display: flex;
+    gap: 0.75rem;
+  }
+
+  &__input {
+    border: none;
+    background-color: #f4f4f4;
+    padding: 19px 0 19px 39px;
+    max-width: 17rem;
+    width: 100%;
+    border-radius: 39px;
+    max-width: 17rem;
+    border: 1px solid #e8e8e8;
+
+    &::placeholder {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 0.1px;
+      color: #18171d;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__imageDiv__image {
+    width: 100%;
+    height: auto;
+  }
+}

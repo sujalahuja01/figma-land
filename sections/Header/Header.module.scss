@@ -1,11 +1,17 @@
-.h {
-  position: absolute;
+.header__container {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .header {
-  margin: 2.5rem auto;
   position: relative;
   z-index: 1;
   overflow-x: hidden;
+  background: rgba(14, 14, 14, 0.6);
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
 }
 
 .navbar {

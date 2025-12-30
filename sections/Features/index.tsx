@@ -4,18 +4,20 @@ import Image from "next/image";
 const features = () => {
   const { heading, description, image, features } = FEATURES_CONTENT;
   return (
-    <section className={`container ${styles.features__container}`}>
-      <div className={styles.features}>
-        <div className={styles.features__heading}>
+    <section id="about" className={styles.features}>
+      <div className={`container ${styles.features__container}`}>
+        <div className={styles.features__content}>
           <h2 className={styles.features__title}>{heading}</h2>
           <p className={styles.features__desc}>{description}</p>
         </div>
-        <div className={styles.features__cards}>
+        <div className={styles.features__cards__container}>
           {features.map((feature) => (
             <div className={styles.features__card} key={feature.id}>
               <img src={feature.logo} alt={feature.alt} />
-              <h3 className={styles.features__cardHead}>{feature.title}</h3>
-              <p className={styles.features__cardDesc}>{feature.description}</p>
+              <h3 className={styles.features__card__title}>{feature.title}</h3>
+              <p className={styles.features__card__desc}>
+                {feature.description}
+              </p>
             </div>
           ))}
         </div>

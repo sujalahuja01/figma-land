@@ -27,7 +27,9 @@ body {
   margin: 0 auto;
   padding: 0 1rem;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 /* @media (max-width: 1440px) {
   .container {
     max-width: 1320px;
