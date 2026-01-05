@@ -1,3 +1,5 @@
+@use "@/styles/mixins" as *;
+
 .testimonial__card {
   display: flex;
   flex-direction: column;
@@ -8,11 +10,7 @@
 }
 
 .testimonialCard__desc {
-  font-weight: 400;
-  font-size: 28px;
-  line-height: 40px;
-  letter-spacing: 0.2px;
-  color: var(--primary-gray);
+  @include text-style(400, 28px, 40px, 0.2px, var(--primary-gray));
   margin: 60px 0;
 }
 
@@ -39,4 +37,21 @@
   line-height: 28px;
   letter-spacing: 0.2px;
   color: var(--primary-blue);
+}
+@media (max-width: 1399px) {
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+  .testimonialCard__desc {
+    @include text-style(400, 16px, 40px, 0.2px, var(--primary-gray));
+  }
+}
+
+@media (max-width: 576px) {
 }

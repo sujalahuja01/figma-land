@@ -7,7 +7,10 @@ import Button from "@/components/Button/Button";
 const index = () => {
   const { heading, description, image, btn_text } = ORGANISE_CONTENT;
   return (
-    <section id="product" className={styles.organise}>
+    <section
+      id="product"
+      className={styles.organise}
+    >
       <div className={`container ${styles.organise__container}`}>
         <div className={styles.organise__content}>
           <h2 className={styles.organise__title}>{heading}</h2>

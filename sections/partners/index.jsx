@@ -10,26 +10,26 @@ const index = () => {
         <div className={styles.partners__content}>
           <h2 className={styles.partners__title}>{heading}</h2>
           <p className={styles.partners__desc}>{description}</p>
-          <div className={styles.partners__logosDiv}>
-            {images.map((image) => (
-              <div
-                key={image.id}
-                className={styles.partners__logosDiv__logo}
-              >
-                <p className={styles.partners__logo__client}>{image.clinet}</p>
-                <img
-                  className={styles.partner__logo}
-                  src={image.src}
-                  alt={image.alt}
-                />
-              </div>
-            ))}
-          </div>
-          <Button
-            style={styles.partners__btn}
-            text={btn_text}
-          />
         </div>
+        <div className={styles.partners__logosDiv}>
+          {images.map((image) => (
+            <div
+              key={image.id}
+              className={styles.partners__logosDiv__logo}
+            >
+              <p className={styles.partners__logo__client}>{image.clinet}</p>
+              <img
+                className={styles.partner__logo}
+                src={image.src}
+                alt={image.alt}
+              />
+            </div>
+          ))}
+        </div>
+        <Button
+          className={styles.partners__btn}
+          text={btn_text}
+        />
       </div>
     </section>
   );

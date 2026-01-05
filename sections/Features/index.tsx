@@ -4,7 +4,10 @@ import Image from "next/image";
 const features = () => {
   const { heading, description, image, features } = FEATURES_CONTENT;
   return (
-    <section id="about" className={styles.features}>
+    <section
+      id="about"
+      className={styles.features}
+    >
       <div className={`container ${styles.features__container}`}>
         <div className={styles.features__content}>
           <h2 className={styles.features__title}>{heading}</h2>
@@ -12,8 +15,15 @@ const features = () => {
         </div>
         <div className={styles.features__cards__container}>
           {features.map((feature) => (
-            <div className={styles.features__card} key={feature.id}>
-              <img src={feature.logo} alt={feature.alt} />
+            <div
+              className={styles.features__card}
+              key={feature.id}
+            >
+              <img
+                className={styles.features__card__icon}
+                src={feature.logo}
+                alt={feature.alt}
+              />
               <h3 className={styles.features__card__title}>{feature.title}</h3>
               <p className={styles.features__card__desc}>
                 {feature.description}

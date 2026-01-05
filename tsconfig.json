@@ -36,7 +36,8 @@
     "sections/organise/index.jsx",
     "sections/newsletter/index.jsx",
     "sections/partners/index.jsx",
-    "sections/pricing/index.jsx"
+    "sections/pricing/index.jsx",
+    "sections/header/index.tsx"
   ],
   "exclude": ["node_modules"]
 }

@@ -1,3 +1,5 @@
+@use "@/styles/mixins" as *;
+
 .hero {
   position: relative;
   min-height: 100vh;
@@ -23,21 +25,11 @@
   }
 
   &__title {
-    font-weight: 700;
-    font-size: 74px;
-    line-height: 84px;
-    letter-spacing: var(--font-line);
-    color: var(--primary-white);
-    margin-bottom: 1.7rem;
+    @include text-style(700, 74px, 84px, 0.2px, var(--primary-white), 1.7rem);
   }
 
   &__desc {
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 40px;
-    letter-spacing: 0.2px;
-    color: var(--primary-white);
-    margin-bottom: 6rem;
+    @include text-style(400, 28px, 40px, 0.2px, var(--primary-white), 6rem);
   }
 
   &__bg__image {
@@ -57,5 +49,33 @@
   }
   .hero__para {
     font-size: 20px;
+  }
+}
+
+@media (max-width: 1399px) {
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 576px) {
+  .hero {
+    &__title {
+      @include text-style(400, 40px, 55px, 0.2px, var(--primary-white), 2rem);
+    }
+
+    &__desc {
+      @include text-style(400, 24px, 35px, 0.2px, var(--primary-white), 4rem);
+    }
+
+    &__container {
+      margin-top: 3rem;
+    }
   }
 }

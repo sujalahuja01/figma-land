@@ -8,7 +8,10 @@ import { HERO_CONTENT } from "@/utils/content";
 const hero = () => {
   const { heading, description, btn_text, image } = HERO_CONTENT;
   return (
-    <section id="hero" className={styles.hero}>
+    <section
+      id="hero"
+      className={styles.hero}
+    >
       <Image
         className={styles.hero__bg__image}
         src={image.src}
@@ -21,7 +24,10 @@ const hero = () => {
           <h1 className={styles.hero__title}>{heading}</h1>
           <p className={styles.hero__desc}>{description}</p>
           <div className={styles.hero__btn}>
-            <Button text={btn_text} style="" />
+            <Button
+              text={btn_text}
+              style=""
+            />
           </div>
         </div>
       </div>

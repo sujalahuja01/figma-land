@@ -32,3 +32,32 @@
     @include text-style(400, 28px, 40px, 0.2px, var(--primary-white), 90px);
   }
 }
+@media (max-width: 1399px) {
+}
+
+@media (max-width: 1199px) {
+}
+
+@media (max-width: 991px) {
+}
+
+@media (max-width: 767px) {
+}
+
+@media (max-width: 576px) {
+  .pricing {
+    &__title {
+      @include text-style(400, 40px, 55px, 0.2px, var(--primary-white), 27px);
+    }
+
+    &__desc {
+      @include text-style(400, 24px, 35px, 0.2px, var(--primary-white), 100px);
+    }
+
+    &__cards {
+      flex-direction: column;
+      width: 100%;
+      gap: 50px;
+    }
+  }
+}

@@ -1,51 +1,117 @@
-.header__container {
+.header {
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   width: 100%;
   left: 50%;
   transform: translateX(-50%);
-}
-.header {
-  position: relative;
-  z-index: 1;
   overflow-x: hidden;
   background: rgba(14, 14, 14, 0.6);
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
+
+  &__container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__desktop {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  &__list {
+    display: flex;
+    gap: 2.5rem;
+    list-style: none;
+
+    &--desktop {
+      flex-direction: row;
+    }
+
+    &__links {
+      text-decoration: none;
+      color: var(--primary-white);
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 1.75rem;
+      letter-spacing: 0.2px;
+    }
+  }
+
+  &__socials {
+    display: flex;
+    gap: 1.5rem;
+  }
+
+  &__mobile {
+    padding: 20px 0;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__menu {
+    display: none;
+  }
 }
 
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
+@media (max-width: 1399px) {
 }
 
-.list {
-  display: flex;
-  gap: 2rem;
-  align-items: center;
+@media (max-width: 1199px) {
 }
 
-.navList {
-  display: flex;
-  gap: 2.5rem;
-  list-style: none;
+@media (max-width: 991px) {
 }
 
-.navLink {
-  text-decoration: none;
-  color: var(--primary-white);
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 1.75rem;
-  letter-spacing: 0.2px;
+@media (max-width: 767px) {
+  .header {
+    &__menu {
+      display: block;
+    }
+
+    &__list {
+      &--desktop {
+        display: none;
+      }
+
+      &--mobile {
+        flex-direction: column;
+      }
+    }
+
+    &__socials {
+      &--desktop {
+        display: none;
+      }
+    }
+  }
 }
 
-.socials {
-  display: flex;
-  gap: 1.5rem;
+@media (max-width: 576px) {
 }
+// @media (max-width: 1399px) {
 
-.bg__image {
-  object-fit: cover;
-}
+// }
+
+// @media (max-width: 1199px) {
+
+// }
+
+// @media (max-width: 991px) {
+
+// }
+
+// @media (max-width: 767px) {
+
+// }
+
+// @media (max-width: 576px) {
+
+// }

@@ -260,7 +260,7 @@ export const PRICING_CONTENT = {
 };
 
 export const CONTACT_CONTENT = {
-  heading: "Contact",
+  heading: "Contact Us",
   description:
     "Most calendars are designed for teams. Slate is designed for freelancers",
   placeholder: {

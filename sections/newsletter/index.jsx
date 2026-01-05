@@ -23,10 +23,14 @@ const index = () => {
           />
         </div>
         <div className={styles.newsletter__content}>
-          <p className={styles.newsletter__subTitle}>{desc_1}</p>
-          <h2 className={styles.newsletter__title}>{heading}</h2>
-          <p className={styles.newsletter__subscribe}>{desc_2}</p>
-          <p className={styles.newsletter__availability}>{desc_3}</p>
+          <div className={styles.newsletter__content__heading}>
+            <p className={styles.newsletter__subTitle}>{desc_1}</p>
+            <h2 className={styles.newsletter__title}>{heading}</h2>
+          </div>
+          <div className={styles.newsletter__content__form}>
+            <p className={styles.newsletter__subscribe}>{desc_2}</p>
+            <p className={styles.newsletter__availability}>{desc_3}</p>
+          </div>
           <div className={styles.newsletter__sub}>
             <input
               type="email"

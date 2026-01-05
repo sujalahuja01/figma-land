@@ -25,36 +25,37 @@ const index = () => {
           <p className={styles.contact__desc}>{description}</p>
         </div>
         <div className={styles.contact__content}>
-          <div className={styles.contact__info}>
-            <form className={styles.contact__form}>
-              <h4 className={styles.contact__form__heading}>
-                {placeholder.head}
-              </h4>
-              <input
-                className={styles.contact__form__input}
-                type="text"
-                placeholder={placeholder.name}
-              />
-              <input
-                className={styles.contact__form__input}
-                type="email"
-                placeholder={placeholder.email}
-              />
-              <textarea
-                className={`${styles.contact__form__textarea} ${styles.contact__form__input}`}
-                placeholder={placeholder.message}
-              ></textarea>
+          <form className={styles.contact__form}>
+            <h4 className={styles.contact__form__heading}>
+              {placeholder.head}
+            </h4>
+            <input
+              className={styles.contact__form__input}
+              type="text"
+              placeholder={placeholder.name}
+            />
+            <input
+              className={styles.contact__form__input}
+              type="email"
+              placeholder={placeholder.email}
+            />
+            <textarea
+              className={`${styles.contact__form__textarea} ${styles.contact__form__input}`}
+              placeholder={placeholder.message}
+            ></textarea>
 
-              <Button
-                style=""
-                text={btn_text}
-              />
-            </form>
-          </div>
+            <Button
+              style=""
+              text={btn_text}
+            />
+          </form>
           <div className={styles.contact__location}>
             <div className={styles.contact__infoText}>
               {information.map((info, idx) => (
-                <div key={idx}>
+                <div
+                  key={idx}
+                  className={styles.contact__infoText__content}
+                >
                   <img
                     className={styles.contact__infoText__image}
                     src={info.src}
